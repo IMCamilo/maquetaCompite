@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COMPITE - Ingeniero</title>
+    <link rel="icon" href="img/favicon.png" sizes="32x32">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="css/formularios.css">
+    <script>
+        $(document).ready(function() {
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        });
+    </script>
+</head>
+
+<body style="font-size:75%">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo">
+                <img src="img/compite2.png" alt="logo" class="img-responsive" width="50%" height="50%" style="padding-top:10px">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="login.html">Salir</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="login.html">Salir</a></li>
+            </ul>
+            <a href="index.html" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div class="row" style="width:80%">
+        <div class="section">
+            <div id="tabs">
+                <ul class="tabs">
+                    <li class="tab col s4"><a href="#formulario1">SELECCIÓN PROYECTO</a></li>
+                    <li class="tab col s4"><a class="active" href="#formulario2">CREAR RENDICIÓN</a></li>
+                </ul>
+                <div id="formulario1" class="col s12">
+                    <!--aca va el formulario seleccion de proyecto-->
+                    <div id="seleccionProyecto" class="col s12">
+                        <ul class="collapsible" data-collapsible="expandable" style="width:100%">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">contacts</i>TUS PROYECTO PÚBLICOS</div>
+                                <div class="collapsible-body">
+                                    <ul class="collection">
+                                        <li class="collection-item avatar">
+                                            <i class="material-icons circle blue">work</i>
+                                            <a href="#!" class="collection-item">
+                                                <span class="title">Nombre Primer Proyecto</span>
+                                                <br>
+                                                <span>Ubicado en ...</span>
+                                            </a>
+                                        </li>
+                                        <li class="collection-item avatar">
+                                            <i class="material-icons circle blue">work</i>
+                                            <a href="#!" class="collection-item">
+                                                <span class="title">Nombre Segundo Proyecto</span>
+                                                <br>
+                                                <span>Ubicado en ...</span>
+                                            </a>
+                                        </li>
+                                        <li class="collection-item avatar">
+                                            <i class="material-icons circle blue">work</i>
+                                            <a href="#!" class="collection-item">
+                                                <span class="title">Nombre Tercer Proyecto</span>
+                                                <br>
+                                                <span>Ubicado en ...</span>
+                                            </a>
+                                        </li>
+                                        <li class="collection-item avatar">
+                                            <i class="material-icons circle blue">work</i>
+                                            <a href="#!" class="collection-item">
+                                                <span class="title">Nombre Cuarto Proyecto</span>
+                                                <br>
+                                                <span>Ubicado en ...</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">person_pin</i>TUS PROYECTO PRIVADOS</div>
+                                <div class="collapsible-body">
+                                    <ul class="collection">
+                                        <li class="collection-item avatar">
+                                            <i class="material-icons circle blue">work</i>
+                                            <a href="#!" class="collection-item">
+                                                <span class="title">Nombre Primer Proyecto</span>
+                                                <br>
+                                                <span>Ubicado en ...</span>
+                                            </a>
+                                        </li>
+                                        <li class="collection-item avatar">
+                                            <i class="material-icons circle blue">work</i>
+                                            <a href="#!" class="collection-item">
+                                                <span class="title">Nombre Segundo Proyecto</span>
+                                                <br>
+                                                <span>Ubicado en ...</span>
+                                            </a>
+                                        </li>
+                                        <li class="collection-item avatar">
+                                            <i class="material-icons circle blue">work</i>
+                                            <a href="#!" class="collection-item">
+                                                <span class="title">Nombre Tercer Proyecto</span>
+                                                <br>
+                                                <span>Ubicado en ...</span>
+                                            </a>
+                                        </li>
+                                        <li class="collection-item avatar">
+                                            <i class="material-icons circle blue">work</i>
+                                            <a href="#!" class="collection-item">
+                                                <span class="title">Nombre Cuarto Proyecto</span>
+                                                <br>
+                                                <span>Ubicado en ...</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="formulario2" class="col s12">
+                    <div class="card-panel teal lighten-2 90A4AE" style="color:#FFFFFF; font-weight: bold;">CREAR NUEVA RENDICIÓN PARA PROYECTO</div>
+                    <!--aca va el formulario para crear rendiciones-->
+                    <ul class="collapsible" data-collapsible="expandable" style="width:100%">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">navigation</i>MOVILIZACION</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <input id="fecha" type="text" value="04/08/2016"> ITEM :
+                                        <select class="browser-default">
+                                            <option value="1">ITEM 1</option>
+                                            <option value="2">ITEM 2</option>
+                                            <option value="3">ITEM 3</option>
+                                        </select>
+                                        <input id="motivo" value="MOTIVO" type="text">
+                                        <form action="#">
+                                            <div class="file-field input-field">
+                                                <div class="file-path-wrapper">
+                                                    <input type="file" multiple>
+                                                    <input class="file-path validate" type="text" value="CLIC PARA CARGAR ARCHIVOS" placeholder="CARGAR ARCHIVOS">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--LADO 2-->
+                                    <div class="col s6 m6">
+                                        <input id="precio" type="text" value="PRECIO">
+                                        <input id="boletas" value="BOLETAS" type="text">
+                                        <input id="deshasta" type="text" value="DESDE HASTA">
+                                    </div>
+                                    <div class="col s12 m12">
+                                        <a class="btn" onclick="Materialize.toast('RENDICIÓN DE MOVILIZACIÓN CREADA CORRECTAMENTE', 4000)">CREAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">person_pip</i>COLACIÓN</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <input id="fecha" type="text" value="04/08/2016"> ITEM :
+                                        <select class="browser-default">
+                                            <option value="1">ITEM 1</option>
+                                            <option value="2">ITEM 2</option>
+                                            <option value="3">ITEM 3</option>
+                                        </select>
+                                        <input id="motivo" value="MOTIVO" type="text">
+                                        <form action="#">
+                                            <div class="file-field input-field">
+                                                <div class="file-path-wrapper">
+                                                    <input type="file" multiple>
+                                                    <input class="file-path validate" type="text" value="CLIC PARA CARGAR ARCHIVOS" placeholder="CARGAR ARCHIVOS">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--LADO 2-->
+                                    <div class="col s6 m6">
+                                        <input id="precio" type="text" value="PRECIO TOTAL">
+                                    </div>
+                                    <div class="col s12 m12">
+                                        <a class="btn" onclick="Materialize.toast('RENDICIÓN DE MOVILIZACIÓN CREADA CORRECTAMENTE', 4000)">CREAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">playlist_add</i>OTROS</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <input id="fecha" type="text" value="04/08/2016"> ITEM :
+                                        <select class="browser-default">
+                                            <option value="1">ITEM 1</option>
+                                            <option value="2">ITEM 2</option>
+                                            <option value="3">ITEM 3</option>
+                                        </select>
+                                        <input id="motivo" value="MOTIVO" type="text">
+                                        <form action="#">
+                                            <div class="file-field input-field">
+                                                <div class="file-path-wrapper">
+                                                    <input type="file" multiple>
+                                                    <input class="file-path validate" type="text" value="CLIC PARA CARGAR ARCHIVOS" placeholder="CARGAR ARCHIVOS">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--LADO 2-->
+                                    <div class="col s6 m6">
+                                        <input id="precio" type="text" value="PRECIO">
+                                        <input id="boletas" value="BOLETAS" type="text">
+                                        <input id="deshasta" type="text" value="DESDE HASTA">
+                                    </div>
+                                    <div class="col s12 m12">
+                                        <a class="btn" onclick="Materialize.toast('RENDICIÓN DE MOVILIZACIÓN CREADA CORRECTAMENTE', 4000)">CREAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">work</i>AUDITORÍA (PROYECTO PÚBLICO)</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <input id="fecha" type="text" value="04/08/2016"> ITEM :
+                                        <input id="persona" value="PERSONA A CARGO" type="text">
+                                        <form action="#">
+                                            <div class="file-field input-field">
+                                                <div class="file-path-wrapper">
+                                                    <input type="file" multiple>
+                                                    <input class="file-path validate" type="text" value="CLIC PARA CARGAR ARCHIVOS" placeholder="CARGAR ARCHIVOS">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--LADO 2-->
+                                    <div class="col s6 m6">
+                                        ESTADO DEL PROYECTO :
+                                        <select class="browser-default">
+                                            <option value="1">EN CURSO</option>
+                                            <option value="2">FINALIZADO</option>
+                                            <option value="3">PAUSADO</option>
+                                        </select>
+                                        <input id="descripcion" type="text" class="materialize-textarea" value="DESCRIPCION">
+                                    </div>
+                                    <div class="col s12 m12">
+                                        <a class="btn" onclick="Materialize.toast('RENDICIÓN DE COLACIÓN CREADA CORRECTAMENTE', 4000)">CREAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--aca va el formulario para crear rendiciones-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer teal" style="padding-top:40px">
+        <div class="container">
+            <div class="row">
+                <div class="col s1"></div>
+                <div class="col s2">
+                    <div class="row">
+                        <img class="responsive-img" src="img/santiago-1.png" width="100px" height="100px">
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:75%;">OFICINA CENTRAL SANTIAGO</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:65%;">Galicia #539, Las Condes. Santiago.</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:65%;">+562 223311693</span></h6>
+                    </div>
+                </div>
+                <div class="col s2">
+                    <div class="row">
+                        <img class="responsive-img" src="img/valparaiso-1.png" width="100px" height="100px">
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:75%;">OFICINA REGIONAL VALPARAÍSO</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:65%;">Balmaceda #305, Cerro Castillo, Viña del Mar.</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:65%;">+5632&nbsp;2335 92962</span></h6>
+                    </div>
+                </div>
+                <div class="col s2">
+                    <div class="row">
+                        <img class="responsive-img" src="img/biobio-1.png" width="100px" height="100px">
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:75%;">OFICINA<br>REGIONAL BÍO-BÍO</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:65%;">Bernardo O’higgins #980, oficina F, Concepción.</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:65%;">+5641 222 1035</span></h6>
+                    </div>
+                </div>
+                <div class="col s2">
+                    <div class="row">
+                        <img class="responsive-img" src="img/araucania-1.png" width="100px" height="100px">
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:75%;">OFICINA<br>REGIONAL ARAUCANÍA</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:65%;">Antonio Varas #687, Oficina 708. Temuco.</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:65%;">+5645 273 0693</span></h6>
+                    </div>
+                </div>
+                <div class="col s2">
+                    <div class="row">
+                        <img class="responsive-img" src="img/los-lagos-1.png" width="100px" height="100px">
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:75%;">OFICINA<br>REGIONAL LOS LAGOS</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:75%;">Antonio Varas #216, of 503, Puerto Montt.</span></h6>
+                    </div>
+                    <div class="row">
+                        <h6 class=""><span style="color: #ffffff; font-size:75%;">+5665 225&nbsp;7655</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container" style="font-size:75%">
+                Rendición de Proyectos - COMPITE - 2016
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+
+</html>
